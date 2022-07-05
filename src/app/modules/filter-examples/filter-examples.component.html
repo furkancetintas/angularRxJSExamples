@@ -1,0 +1,13 @@
+<div class="flex">
+  <button (click)="getAllData()">Tüm Verileri Getir!!</button>
+  <button (click)="getAllUserId2()">userId 'si 2 Olanları Getir</button>
+  <button (click)="getAllUserId10()">userId 'si 10 Olanları Getir</button>
+</div>
+<div class="content">
+  <ul class="ulEl" *ngFor="let item of items">
+    <li><strong>UserId:</strong> {{ item.userId }}</li>
+    <li><strong>id:</strong> {{ item.id }}</li>
+    <li><strong>Title:</strong> {{ item.title }}</li>
+    <li><strong>Body Desc:</strong> {{ item.body }}</li>
+  </ul>
+</div>
